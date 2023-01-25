@@ -1,0 +1,33 @@
+:root {
+  --purple: #551ba8;
+  --white: #fafafa;
+  --black: #212121;
+  --dark: #333333;
+  --blue: #45b5ee;
+  --light-blue: #d9e3e9;
+  --body-blue: #accbdc;
+}
+
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+body {
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Nunito', sans-serif;
+}

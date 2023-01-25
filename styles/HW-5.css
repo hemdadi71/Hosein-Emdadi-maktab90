@@ -1,5 +1,411 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;500;700&display=swap');
-@import url(styles/-reset);
+@import url(-reset.css);
 @import url(_components.css);
 
+.container {
+  width: 1300px;
+  height: auto;
+  /* background-color: var(--white); */
+}
+.header {
+  width: 100%;
+  height: 60rem;
+  background: var(--purple);
+  border-radius: 2rem 2rem 0 0;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.header .img {
+  width: 70rem;
+  height: 50rem;
+}
+.navigation {
+  width: 80%;
+  height: 10rem;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.logo {
+  width: 15rem;
+  height: 15rem;
+  background-color: transparent;
+}
+.navItems {
+  list-style: none;
+  display: flex;
+  color: var(--white);
+  font-size: 1.8rem;
+  gap: 5rem;
+  align-items: center;
+}
+.navItems li {
+  cursor: pointer;
+  position: relative;
+}
+.navItems li a {
+  text-decoration: none;
+  color: var(--white);
+}
+.navItems li a:hover {
+  color: var(--blue);
+  transition: all 0.3s;
+}
+.navItems li a:focus {
+  color: var(--blue);
+  transition: all 0.3s;
+}
+.navItems li a:focus::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 0.2rem;
+  background: linear-gradient(
+    0.25turn,
+    var(--purple),
+    var(--blue),
+    var(--purple)
+  );
+  bottom: -0.4rem;
+  right: 0rem;
+}
+.header-buttom {
+  display: flex;
+  width: 90%;
+  height: 100%;
+  position: relative;
+  left: 7rem;
+  gap: 10rem;
+}
+.header-buttom-left {
+  width: 30rem;
+  height: 80%;
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+}
+.header-buttom-left .title {
+  font-size: 4rem;
+  font-weight: bold;
+  width: 100%;
+  text-align: left;
+  line-height: 4rem;
+}
+.header-buttom-left .explanation {
+  font-size: 1.4rem;
+}
+.header p {
+  color: var(--white);
+}
+.DemoBtn {
+  width: 16rem;
+}
+.article {
+  width: 100%;
+  height: auto;
+}
+.helpful {
+  width: 100%;
+  height: 50rem;
+  background-color: var(--white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30rem;
+}
+.discription {
+  width: 28%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}
+.discription .title {
+  font-size: 3rem;
+  font-weight: bold;
+}
+.discription {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.helpful-img {
+  width: 45rem;
+  height: 45rem;
+}
+.items > h1 {
+  position: relative;
+  font-size: 1.5rem;
+}
+.items > p {
+  font-size: 1.2rem;
+}
+.items h1 .arrow {
+  position: absolute;
+  top: 0.3rem;
+  left: -3rem;
+}
+.arrow {
+  width: 1.5rem;
+  height: 1.8rem;
+}
+.items {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.provides {
+  width: 100%;
+  height: 50rem;
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+  background-color: var(--white);
+  align-items: center;
+}
+.provides > h1 {
+  font-size: 3rem;
+  width: 40rem;
+  text-align: center;
+}
+.provides > ul {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+  width: 80%;
+  height: 50%;
+}
+.provides > ul > li {
+  width: 25rem;
+  height: 35rem;
+  border-radius: 0.8rem;
+  background-color: var(--white);
+  box-shadow: 0 0 2rem rgb(150, 150, 150);
+  display: flex;
+  flex-direction: column;
+}
+.provides > ul > li .icon-box {
+  width: 100%;
+  height: 50%;
+}
+.provides > ul > li .discription {
+  width: 100%;
+  height: 50%;
+  background-color: var(--white);
+  position: relative;
+  border-radius: 0 0 0.8rem 0.8rem;
+}
+.provides > ul > li .discription.active {
+  background-color: var(--purple);
+}
+.provides > ul > li .discription.active .waves {
+  fill: var(--purple) !important;
+}
+.discription > .waves {
+  position: absolute;
+  top: -5rem;
+  fill: var(--white);
+}
+.provides-Item .icon-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.provides-Item .icon {
+  width: 13rem;
+  height: 13rem;
+  border-radius: 50%;
+  background-color: #faeaea;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.discription {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
+.discription > h1 {
+  font-size: 1.6rem;
+  color: var(--black);
+}
+.discription > p {
+  font-size: 1.3rem;
+  text-align: center;
+  width: 80%;
+  color: var(--black);
+}
+.provides > ul > li .discription.active > h1 {
+  color: var(--white) !important;
+}
+.provides > ul > li .discription.active > p {
+  color: var(--white) !important;
+}
+.best-pricing {
+  width: 100%;
+  height: 60rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--white);
+  padding-top: 3rem;
+  gap: 2rem;
+}
+.best-pricing > h1 {
+  font-size: 3rem;
+}
+.key > span {
+  font-size: 1.6rem;
+  cursor: pointer;
+}
+.key {
+  display: flex;
+  gap: 2rem;
+}
+.key .border {
+  width: 6.5rem;
+  height: 2.5rem;
+  background-color: #d9f0fc;
+  border-radius: 50px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  border: 1px solid #42b4ed;
+}
+.key .inherit {
+  width: 3rem;
+  height: 1.8rem;
+  background-color: #42b4ed;
+  border-radius: 50px;
+  position: absolute;
+  left: 0.2rem;
+  transition: all 1s;
+}
+.price {
+  display: flex;
+  gap: 3rem;
+}
+.price > li {
+  width: 25rem;
+  height: 35rem;
+  border-radius: 0.8rem;
+  background-color: var(--white);
+  box-shadow: 0 0 2rem rgb(150, 150, 150);
+  display: flex;
+  flex-direction: column;
+  border: 1px solid var(--white);
+}
+.price-item-top {
+  width: 100%;
+  height: 35%;
+  border-radius: 0.8rem 0.8rem 0 0;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  padding-top: 5rem;
+}
+.wave-top {
+  fill: var(--white);
+  position: absolute;
+  top: 12rem;
+}
+.price-item-top.active {
+  background-color: var(--purple) !important;
+}
+.price-item-top.active .wave-top {
+  fill: var(--purple);
+}
+
+.price-item-top.active .h1 {
+  color: var(--white) !important;
+}
+.price-item-top.active .price > li {
+  border: 1px solid var(--purple) !important;
+}
+.line-box {
+  display: flex;
+  position: relative;
+}
+.point {
+  width: 0.3rem;
+  height: 0.3rem;
+  border-radius: 50%;
+  background-color: var(--black);
+  position: relative;
+  top: -0.1rem;
+}
+.line {
+  width: 13rem;
+  height: 0.1rem;
+  background-color: var(--black);
+}
+.price-item-top.active .point {
+  background-color: var(--white);
+}
+.price-item-top.active .line {
+  background-color: var(--white);
+}
+
+.price-item-top .h1:nth-child(3) {
+  font-size: 2rem;
+  font-weight: bold;
+}
+.price-item-bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  top: 6rem;
+  gap: 1rem;
+}
+.price-item-bottom > p {
+  font-size: 1.5rem;
+}
+.btn1 {
+  color: var(--blue);
+  background-color: #dbe7ed;
+}
+.btn1.active {
+  color: #dbe7ed;
+  background-color: var(--blue);
+}
+.rewiev {
+  width: 100%;
+  height: 60rem;
+  background-color: var(--white);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+.rewiev > h1 {
+  font-size: 3rem;
+}
+.rewiev > p {
+  font-size: 1.3rem;
+  width: 31rem;
+  text-align: center;
+}
+.reviewMain {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  gap: 4rem;
+}
+.reviewItems {
+  width: 33rem;
+  height: 25rem;
+  background-color: var(--white);
+  border-radius: 0.8rem;
+  box-shadow: 0 0 2rem rgb(150, 150, 150);
+}

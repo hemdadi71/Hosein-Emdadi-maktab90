@@ -43,6 +43,7 @@ priceItem.forEach(item =>
 
 reviewItems.forEach(item =>
   item.addEventListener('click', function handleRwiev() {
-    
+    reviewItems.forEach(item => item.classList.remove('active'));
+    this.classList.add('active');
   })
 );
